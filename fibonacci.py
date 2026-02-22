@@ -1,7 +1,5 @@
 def fibonacci(n):
-    """
-    Генерирует первые n чисел Фибоначчи.
-    """
+    """Генерирует первые n чисел Фибоначчи"""
     if n <= 0:
         return []
     elif n == 1:
@@ -16,7 +14,10 @@ def fibonacci(n):
 
 
 if __name__ == "__main__":
-    fib_numbers = fibonacci(15)
-    print('Первые 15 чисел Фибоначчи:')
-    print(fib_numbers)
-    print('Сумма:', sum(fib_numbers))
+    # Test the function
+    result = fibonacci(10)
+    print('Fibonacci sequence (first 10):', result)
+    
+    # More examples
+    print('First 15:', fibonacci(15))
+    print('First 20:', fibonacci(20))
